@@ -1,5 +1,7 @@
 .htaccess
-wp-config.php
+/*
+!.gitignore
+!wp-content/
 wp-content/*
 !wp-content/plugins/
 !wp-content/themes/
