@@ -1,0 +1,16 @@
+.htaccess
+wp-config.php
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+
+wp-content/themes/*
+!wp-content/themes/mollklang/
+
+sitemap.xml
+*.log
+sitemap.xml
+sitemap.xml.gz
+.DS_Store
+
+.vagrant/
