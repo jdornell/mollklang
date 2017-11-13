@@ -1,0 +1,7 @@
+# ignore all files starting with .
+.*
+
+!.gitignore
+
+# track readme.md in the root (i.e. do NOT ignore it)
+!readme.md
