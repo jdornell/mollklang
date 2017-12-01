@@ -2,19 +2,19 @@
 
 	<div class="row">
 
-		<div class="col-sm-8 blog-main">
+		<div class="column">
 
 			<?php 
-			if ( have_posts() ) : while ( have_posts() ) : the_post();
+				if ( have_posts() ) : while ( have_posts() ) : the_post();
   	
-				get_template_part( 'content', get_post_format() );
+					get_template_part( 'content', get_post_format() );
   
-			endwhile; endif; 
+				endwhile; endif; 
 			?>
 
-		</div> <!-- /.blog-main -->
+		</div> <!-- /.column -->
 
-		<?php get_sidebar(); ?>
+		<?php /*get_sidebar();*/ ?>
 
 	</div> <!-- /.row -->
 
