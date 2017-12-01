@@ -1,0 +1,29 @@
+#header {
+    background: #eee;
+    display: table;
+    width: 100%;
+    .header-content {
+        margin: 0 auto;
+        max-width: 112.0rem;
+        padding: 1rem 2.0rem;
+        position: relative;
+        width: 100%;
+    }
+}
+
+.container {
+    min-height: 100%;
+    margin-bottom: -50px; /* Equal to height of footer */
+    //padding: 10px 150px;
+}
+
+#footer {
+    height: 50px;
+    .footer-content {
+        margin: 0 auto;
+        max-width: 112.0rem;
+        padding: 1rem 2.0rem;
+        position: relative;
+        width: 100%;
+    }
+}

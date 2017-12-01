@@ -1,0 +1,39 @@
+.site-logo,
+.main-nav {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.site-logo {
+    text-align: center;
+    width: 70px;
+    color: #fff;
+    a {
+        font-size: 22px;
+    }
+}
+
+.main-nav ul {
+    margin-bottom: 0;
+    margin-left: 80px;
+    li {
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 0;
+        margin-right: 15px;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.portfolio-item {
+    a {
+        background-size: cover;
+        border: 1px solid;
+        padding: 51px;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
