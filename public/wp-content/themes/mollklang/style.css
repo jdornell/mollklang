@@ -1,7 +1,73 @@
 /*
 Theme Name: Mollklang
 Author: Johan Dornell
-Description: Website for Mollklang company
+Description: Website for Mollklang Company
 Version: 0.0.1
 Tags:
 */
+html, body {
+  height: 100%;
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  color: #000000; }
+
+.videoWrapper iframe {
+  width: 100%; }
+
+#header {
+  background: #eee;
+  display: table;
+  width: 100%; }
+  #header .header-content {
+    margin: 0 auto;
+    max-width: 112.0rem;
+    padding: 1rem 2.0rem;
+    position: relative;
+    width: 100%; }
+
+.container {
+  min-height: 100%;
+  margin-bottom: -50px;
+  /* Equal to height of footer */ }
+
+#footer {
+  height: 50px; }
+  #footer .footer-content {
+    margin: 0 auto;
+    max-width: 112.0rem;
+    padding: 1rem 2.0rem;
+    position: relative;
+    width: 100%; }
+
+.site-logo,
+.main-nav {
+  vertical-align: middle;
+  display: table-cell; }
+
+.site-logo {
+  text-align: center;
+  width: 70px;
+  color: #fff; }
+  .site-logo a {
+    font-size: 22px; }
+
+.main-nav ul {
+  margin-bottom: 0;
+  margin-left: 80px; }
+  .main-nav ul li {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 0;
+    margin-right: 15px; }
+    .main-nav ul li a {
+      text-decoration: none; }
+
+.portfolio-item a {
+  background-size: cover;
+  border: 1px solid;
+  padding: 51px;
+  display: inline-block; }
