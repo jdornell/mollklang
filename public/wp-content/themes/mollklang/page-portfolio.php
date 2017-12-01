@@ -1,35 +1,35 @@
 <?php
     /* Template Name: Portfolio */
-    /* The template for displaying the portfolio of our website. */
+    /* The template for displaying the portfolio of the website. */
 ?>
 
 <?php get_header(); ?>
 
-	<div class="row">
-		<div class="col-sm-12">
+<?php
+    // Get 'portfolio' posts
+    $portfolio_items = get_posts( array(
+	    'post_type' => 'portfolio',
+	    'posts_per_page' => -1,
+	    'orderby' => 'title',
+    ) );
 
-			<?php 
-				if ( have_posts() ) : while ( have_posts() ) : the_post();
-  	
-					get_template_part( 'content', get_post_format() );
-  
-				endwhile; endif; 
-			?>
-            
-            <?php $args = array( 'post_type' =>'portfolio', );
-                $query = new WP_Query( $args ); ?>
+    if ( $portfolio_items ):
+?>
 
+        <div class="row">
             <?php 
-                if ( $query->have_posts()) : while ( $query->have_posts() ) : $query->the_post(); 
+                foreach ( $portfolio_items as $post ): 
+                setup_postdata($post);
             ?>
 
-            <h4><?php the_field('title'); ?></h4>
-
-            <a href="<?php the_field('url'); ?>">Link</a>
-
-            <?php endwhile; ?><?else: ?> <?endif; ?>
-
-		</div> <!-- /.col -->
-	</div> <!-- /.row -->
+            <div class="column portfolio-item">
+                <h3><?php the_title(); ?></h3>
+                <a href="<?php the_permalink(); ?>" style="background-image: url(<?php the_field('thumbnail'); ?>);"></a>
+                <?php the_content(); ?>
+            </div>
+                
+            <?php endforeach; ?>
+        </div>
+    <?php endif; ?>
 
 <?php get_footer(); ?>
