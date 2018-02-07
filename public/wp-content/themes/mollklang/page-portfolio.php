@@ -16,16 +16,23 @@
     if ( $portfolio_items ):
 ?>
 
+        <div class="row main-content">
+            <div class="column">
+                <h3><?php the_title() ?></h3>
+            </div>
+        </div>
+
         <div class="row">
+
             <?php 
-                foreach ( $portfolio_items as $post ): 
+                foreach ($portfolio_items as $post): 
                 setup_postdata($post);
             ?>
 
             <div class="column portfolio-item">
-                <h3><?php the_title(); ?></h3>
                 <a href="<?php the_permalink(); ?>" style="background-image: url(<?php the_field('thumbnail'); ?>);"></a>
                 <?php the_content(); ?>
+                <p><?php the_title(); ?></p>
             </div>
                 
             <?php endforeach; ?>
