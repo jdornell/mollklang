@@ -6,7 +6,7 @@
 <?php get_header(); ?>
 
 <div class="row">
-    <h2>Single portfolio item</h2>
+    <!--><h2>Single portfolio item</h2><!-->
 </div>
 
 <div class="row">
